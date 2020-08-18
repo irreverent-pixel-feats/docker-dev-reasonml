@@ -2,7 +2,7 @@
 
 # Master CI build script
 
-REPO="${ECOLOGY_DOCKER_REPO}"
+REPO="irreverentpixelfeats/dev-reasonml"
 BASE_TAG="sha"
 
 apt-get update -y && apt-get install -y git make

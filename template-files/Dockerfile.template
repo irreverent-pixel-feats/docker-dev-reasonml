@@ -1,8 +1,0 @@
-FROM ${ECOLOGY_DOCKER_BASE_IMAGE}
-MAINTAINER ${ECOLOGY_MAINTAINER_NAME} <"${ECOLOGY_MAINTAINER_EMAIL}">
-
-# Do stuff...
-
-RUN mkdir -p /var/versions
-
-COPY data/version /var/versions/${ECOLOGY_DOCKER_IMAGE_NAME_INTERNAL}

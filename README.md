@@ -1,20 +1,26 @@
-# docker-image.template
+# docker-dev-reasonml
 
 ## Description
 
 ### `TL;DR`
 
-[Ecology](https://github.com/irreverent-pixel-feats/ecology) Template for Docker image only projects.
+Docker Image for a Dev ReasonML Environment
 
-## Bootstrap API
+### More
 
-On top of the default environment passed to the bootstrap script by `ecology`, this template
-requires `ecology` to pass it the following variables:
+**TODO**: Write a proper description
 
-| Name                                 | Description                                |
-|--------------------------------------|--------------------------------------------|
-| `ECOLOGY_DOCKER_BASE_IMAGE`          | The base image to build the image on       |
-| `ECOLOGY_DOCKER_IMAGE_NAME_INTERNAL` | The name for the version file in the image |
-| `ECOLOGY_MAINTAINER_NAME`            | The name of the initial maintainer         |
-| `ECOLOGY_MAINTAINER_EMAIL`           | The email for the initial maintainer       |
-| `ECOLOGY_DOCKER_REPO`                | The repo to publish the image to           |
+## Building the project
+
+### Building and Testing the Lot
+
+You can build and test the content with:
+
+``` shell
+# Run from the root of the repo checkout:
+bin/ci.common
+```
+
+This should run the stuff that CI should be testing, CI might fail even though this
+passes locally because CI might do other stuff like publish artifacts, have some environment
+setup to do etc...

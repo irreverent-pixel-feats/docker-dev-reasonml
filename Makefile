@@ -1,4 +1,4 @@
-REPO = ${ECOLOGY_DOCKER_REPO}
+REPO = irreverentpixelfeats/dev-reasonml
 BASE_TAG = "sha"
 
 .PHONY: version deps build image all
