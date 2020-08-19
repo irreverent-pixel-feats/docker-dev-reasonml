@@ -5,12 +5,14 @@
 REPO="irreverentpixelfeats/dev-reasonml"
 BASE_TAG="sha"
 
-apt-get update -y && apt-get install -y git make
+sudo apt-get update -y && sudo apt-get install -y git make
 
 bin/ci.branches
 
-docker login -u ${DOCKER_USER} -p ${DOCKER_PASS}
+if [ "${TRAVIS_BRANCH}" = 'master' ]; then
+  docker login -u ${DOCKER_USER} -p ${DOCKER_PASS}
 
-for tag in "${BASE_TAG}" "${BASE_TAG}-$(cat data/version)"; do
-  docker push "${REPO}:${tag}"
-done
+  for tag in "${BASE_TAG}" "${BASE_TAG}-$(cat data/version)"; do
+    docker push "${REPO}:${tag}"
+  done
+fi
