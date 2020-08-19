@@ -1,0 +1,12 @@
+dist: xenial
+sudo: required
+language: generic
+services:
+  - docker
+
+script:
+  - timeout 35m bin/ci
+
+notifications:
+  slack:
+    secure: WmRzRBRpPiCx/m4APpHQhtjRPJmEwzpeBOzqRcvp9aD/jZHR5Z9T7lnSmEO086XVk5mt6sTQV7MN1eGFSqCIptRF+rwjRPMt6LzEOT+1CWPh9vgG8KcOeUMpi/EOi3vfUmymxKRgZ+md9xC7USbja3FOecD/1NJsk0sdDfoeOeZMNvwbznW/rA1nJrzmLlObvPURRTuhq7/KCmuUpEhaPOuXZdab/pVp/2wWdIFhegPoPGKmt6Bd3vOAKgAWf5rEilI0jlBwZ9AxhxKaPj8Cf5B0OFQJxRzN3UrIB+wlLXTcJbIQVUBuEUENy2TgQP9fRRKee2v0ufzJSIxDFUSDjD2WEW/Tga20OxMoPRxSiVJKyk4z52nqVz9IKWSKtoo9RrGAd0yzqcfjrfKSKItasfkw+EhXdNVJ7lrF1bYdLHpvCniXPKBFEpqm1s7+AFaPiDMjt1YvAvLa/cjAZzMpo510HAEK2ABPKECSAdVkgzQm6ZNVACBrljwkW8o+loclnQ8lLssEtiwrkkeYt7jp7yXbEQGwx1VgMMqLd+nMAujaRr4jNtvFMFgtVYgqBMFzVx1pwcq8wBXlT8Qq3qlwN/SRmkJqGuEWcVAnLUqwaIhaSt5FuyJn5XUE3O15wxHQW9srmJ2u79ruW7AlQCizvP+ZG4gtVKkM3qFeU/PJr8s=
