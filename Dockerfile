@@ -1,4 +1,4 @@
-FROM irreverentpixelfeats/dev-base:ubuntu_bionic-20200818231532-13aae1f
+FROM irreverentpixelfeats/dev-base:ubuntu_bionic-20200820012602-784bcad
 MAINTAINER Dom De Re <"domdere@irreverentpixelfeats.com">
 
 # Do stuff...
