@@ -9,7 +9,7 @@ RUN echo "deb https://dl.yarnpkg.com/debian/ stable main" | tee /etc/apt/sources
 RUN apt-get update -y \
   && apt-get install -y yarn
 
-RUN yarn global add bs-platform
+RUN yarn global add bs-platform reason-cli@latest-linux
 
 RUN mkdir -p /var/versions
 
